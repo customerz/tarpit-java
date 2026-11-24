@@ -1,0 +1,6 @@
+# SDEVX-8201 test: use a custom build for static scans in this repository.
+# package_source is on so the custom-build path is exercised with the option set.
+veracode_static_scan:
+  use_custom_workflow: custom-build
+  artifact_file: tarpit-java-war
+  package_source: true
